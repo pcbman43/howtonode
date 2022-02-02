@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-fs.unlink('text_file2.txt', function (err) {
+fs.rename('text_file.txt', 'renamed_file.txt', function (err) {
   if (err) throw err;
-  console.log('File deleted!');
+  console.log('File Renamed!');
 }); 
