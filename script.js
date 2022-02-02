@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-fs.appendFile('text_file.txt', 'Hello content!', function (err) {
+fs.open('text_file2.txt', 'w', function (err, file) {
   if (err) throw err;
   console.log('Saved!');
 }); 
